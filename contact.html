@@ -38,7 +38,7 @@
                 <div class="aside_image">
                     <img src="./images/contact.svg">
                 </div>
-                <h2>Contact Us</h2>
+                <h2>Feedback</h2>
                 <p>Asperiores veniam vel doloribus assumenda soluta blanditiis dolores qui voluptates, consequatur vitae.
                 </p>
                 <ul class="contact_details">
@@ -68,13 +68,25 @@
             </aside>
 
 
-            <form class="contact_form">
+            <form class="contact_form" method="post" action="send_feedback.php">
                 <div class="form_name">
                     <input type="text" name="First Name" placeholder="First Name" required>
                     <input type="text" name="Last Name" placeholder="Last Name" required>
                 </div>
                 <input type="email" name="Email Address" placeholder="Your Email Address" required>
-                <textarea name="Message" rows="7" placeholder="Message" required></textarea> 
+                <div class="rate ">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+                <textarea name="Message" rows="7" placeholder="Comments if any" required></textarea> 
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
